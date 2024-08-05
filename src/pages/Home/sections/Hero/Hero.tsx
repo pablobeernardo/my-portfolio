@@ -4,33 +4,23 @@ import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackgroud";
-import { keyframes } from '@emotion/react';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TextAnime from "../../../../components/TextAnime/TextAnime";
 
-const fadeInUp = keyframes`
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
+const SocialLink = styled("div")(({ theme }) => ({
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "20px",
+    a: {
+        color: theme.palette.primary.contrastText,
+        margin: "0 10px",
+        fontSize: "2rem",
+        transition: "color 0.3s",
+        "&:hover": {
+            color: theme.palette.secondary.main,
+        }
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-`;
-
-const AnimatedText = styled(Typography)(({ theme }) => ({
-    animation: `${fadeInUp} 1.5s ease-out`,
-    color: theme.palette.primary.contrastText,
-    fontWeight: 'regular',
-    fontSize: '2rem',
-    [theme.breakpoints.up('sm')]: {
-        fontSize: '3rem',
-    },
-    [theme.breakpoints.up('md')]: {
-        fontSize: '4rem',
-    },
-    [theme.breakpoints.up('lg')]: {
-        fontSize: '5rem',
-    },
 }));
 
 const Hero = () => {
@@ -66,10 +56,11 @@ const Hero = () => {
             width: "75%",
         }
     }));
+   
 
     return (
         <StyledHero>
-            <Container maxWidth="lg">
+            <Container maxWidth="lg" id="home">
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={5}>
                         <Box position="relative">
@@ -83,27 +74,37 @@ const Hero = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography color={"primary.contrastText"} variant="h1" textAlign={"center"} pb={2}>Pablo Bernardo</Typography>
-                        <AnimatedText variant="h2" textAlign={"center"}>
-                            &lt; Sou_Dev /&gt;
-                        </AnimatedText>
+                        <TextAnime/>
                         <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                <StyledButton onClick={() => console.log("Download")}>
-                                    <DownloadIcon />
-                                    <Typography>
-                                        Download CV
-                                    </Typography>
+                                <StyledButton>
+                                    <a href="src\assets\file\Dev_Pablo2024.pdf" download style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+                                        <DownloadIcon />
+                                        <Typography>
+                                            Download CV
+                                        </Typography>
+                                    </a>
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                <StyledButton onClick={() => console.log("Contato")}>
-                                    <MailOutlineIcon />
-                                    <Typography>
-                                        Contato
-                                    </Typography>
+                                <StyledButton>
+                                    <a href="mailto:pablobeernardo@gmail.com " style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+                                        <MailOutlineIcon />
+                                        <Typography>
+                                            Contato
+                                        </Typography>
+                                    </a>
                                 </StyledButton>
                             </Grid>
                         </Grid>
+                        <SocialLink>
+                            <a href="https://www.linkedin.com/in/pablo-bernardo-1b3680195/" target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon />
+                            </a>
+                            <a href="https://github.com/pablobeernardo" target="_blank" rel="noopener noreferrer">
+                                <GitHubIcon />
+                            </a>
+                        </SocialLink>
                     </Grid>
                 </Grid>
             </Container>

@@ -18,7 +18,7 @@ const FooterContainer = styled.footer`
   width: 100%;
 `;
 
-const SocialIcons = styled("div")`
+export const SocialIcons = styled("div")`
   margin-bottom: 1em;
 
   a {
@@ -42,13 +42,13 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <SocialIcons>
-        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/pablo-bernardo-1b3680195/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
         </a>
-        <a href="https://github.com/seu-perfil" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/pablobeernardo" target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
         </a>
-        <a href="mailto:seu-email@exemplo.com">
+        <a href="mailto:pablobeernardo@gmail.com">
           <MailOutlineIcon />
         </a>
       </SocialIcons>

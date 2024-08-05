@@ -150,8 +150,8 @@ const ProjectButton = styled(StyledButton)`
 const Projects: React.FC = () => {
   return (
     <Container>
-      <StyledParagraph>
-        <span>Projects</span>
+      <StyledParagraph id='projects'>
+        <span>Projetos</span>
       </StyledParagraph>
       <ProjectsContainer>
         {projects.map((project) => (

@@ -54,33 +54,39 @@ const About = () => {
     }));
 
     return (
-        <StyledAbout>
+        <StyledAbout id='about'>
             <Container maxWidth="lg">
                 <Grid container spacing={4}>
                     <Grid item xs={12}>
-                        <Typography color={theme.palette.primary.main} variant="h2" textAlign={"center"}>About</Typography>
+                        <Typography color={theme.palette.primary.main} variant="h2" textAlign={"center"}>Sobre</Typography>
                     </Grid>
                     <Grid item xs={12} md={6} display={"flex"} flexDirection={"column"} alignItems={"center"}>
                         <ItemEducation>
                             <WorkIcon fontSize="large" />
-                            <Typography color={theme.palette.primary.main} variant="h5" fontWeight={"bold"} textAlign={"center"}>Experience</Typography>
-                            <Typography color={theme.palette.primary.main} textAlign={"center"}>1 year</Typography>
-                            <Typography color={theme.palette.primary.main} textAlign={"center"}>Front-end Developer at Company</Typography>
+                            <Typography color={theme.palette.primary.main} variant="h5" fontWeight={"bold"} textAlign={"center"}>Experiência</Typography>
+                            <Typography color={theme.palette.primary.main} textAlign={"center"}>1 ano</Typography>
+                            <Typography color={theme.palette.primary.main} textAlign={"center"}>Front-end</Typography>
                         </ItemEducation>
                     </Grid>
                     <Grid item xs={12} md={6} display={"flex"} flexDirection={"column"} alignItems={"center"}>
                         <ItemEducation>
                             <SchoolIcon fontSize="large" />
-                            <Typography color={theme.palette.primary.main} variant="h5" fontWeight={"bold"} textAlign={"center"}>Education</Typography>
-                            <Typography color={theme.palette.primary.main} textAlign={"center"}>Technical Dev</Typography>
-                            <Typography color={theme.palette.primary.main} textAlign={"center"}>Computer Science at University</Typography>
+                            <Typography color={theme.palette.primary.main} variant="h5" fontWeight={"bold"} textAlign={"center"}>Formação</Typography>
+                            <Typography color={theme.palette.primary.main} textAlign={"center"}>Análise e Desenvolvimento de Sistemas</Typography>
+                            <Typography color={theme.palette.primary.main} textAlign={"center"}>Estácio</Typography>
                         </ItemEducation>
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography color={theme.palette.primary.main} textAlign={"center"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio sit amet nunc ultrices placerat. Donec nec elit in elit ultricies ultricies. Maecenas id enim nec magna lacinia ultricies. Sed nec justo nec nunc cursus luctus vitae nec justo. Donec nec elit in elit ultricies ultricies. Maecenas id enim nec magna lacinia ultricies. Sed nec justo nec nunc cursus luctus vitae nec justo.</Typography>
+                        <Typography color={theme.palette.primary.main} textAlign={"center"}>
+                            Sou Pablo Bernardo, um desenvolvedor dedicado e apaixonado por tecnologia, 
+                            atualmente em formação em Análise e Desenvolvimento de Sistemas pela Estácio. 
+                            Apesar de estar no início da minha trajetória profissional, possuo conhecimentos em HTML, CSS, JavaScript e React, habilidades que venho aprimorando ao longo de minha carreira acadêmica e em projetos pessoais.
+                            Conhecimentos que obtive através de curos como Desenvolvedor FullStack pela DevMedia e como Desenvolvedor Front, Back e Mobile pelo SENAI em 2023.
+                            Minhas competências incluem trabalho em equipe e resolução de problemas, sempre com o objetivo de desenvolver interfaces de usuário interativas e eficientes. Estou em constante busca por aprendizado e aprimoramento, pronto para contribuir em uma equipe dinâmica e crescer profissionalmente.
+                        </Typography>
                         <hr />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} id="skills">
                         <Typography color={theme.palette.primary.main} variant="h2" textAlign={"center"}>Skills</Typography>
                     </Grid>
                     <Grid container item xs={12} spacing={2} justifyContent="center">
@@ -100,7 +106,22 @@ const About = () => {
                             <SkillItem>Node.js</SkillItem>
                         </Grid>
                         <Grid item xs={6} sm={4} md={3} lg={2}>
-                            <SkillItem>Python</SkillItem>
+                            <SkillItem>API</SkillItem>
+                        </Grid>
+                        <Grid item xs={6} sm={4} md={3} lg={2}>
+                            <SkillItem>NextJs</SkillItem>
+                        </Grid>
+                        <Grid item xs={6} sm={4} md={3} lg={2}>
+                            <SkillItem>Jest</SkillItem>
+                        </Grid>
+                        <Grid item xs={6} sm={4} md={3} lg={2}>
+                            <SkillItem>Cloud</SkillItem>
+                        </Grid>
+                        <Grid item xs={6} sm={4} md={3} lg={2}>
+                            <SkillItem>WebScraping</SkillItem>
+                        </Grid>
+                        <Grid item xs={6} sm={4} md={3} lg={2}>
+                            <SkillItem>CI/CD</SkillItem>
                         </Grid>
                     </Grid>
                 </Grid>
