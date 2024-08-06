@@ -2,7 +2,6 @@ import { Box, Container, Grid, styled, Typography } from "@mui/material";
 import Avatar from "../../../../assets/images/foto.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackgroud";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -22,6 +21,7 @@ const SocialLink = styled("div")(({ theme }) => ({
         }
     }
 }));
+
 
 const Hero = () => {
 
@@ -57,6 +57,27 @@ const Hero = () => {
         }
     }));
 
+    const StyledLink = styled("a")(({ theme }) => ({
+        backgroundColor: "transparent",
+        border: `1px solid ${theme.palette.primary.contrastText}`,
+        borderRadius: "3px",
+        padding: "5px 15px",
+        width: "100%",
+        color: theme.palette.primary.contrastText,
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "10px",
+        textDecoration: "none",
+        '&:hover': {
+            backgroundColor: theme.palette.secondary.light,
+            cursor: "pointer",
+
+
+        }
+
+    }))
+
     return (
         <StyledHero>
             <Container maxWidth="lg" id="home">
@@ -76,25 +97,20 @@ const Hero = () => {
                         <AnimatedText />
                         <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                <a href="src\assets\file\Dev_Pablo2024.pdf" download style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
-                                    <StyledButton>
-
+                                <StyledLink href="src\assets\file\Dev_Pablo2024.pdf" download >
                                         <DownloadIcon />
                                         <Typography>
                                             Download CV
                                         </Typography>
-                                    </StyledButton>
-                                </a>
+                                </StyledLink>
                             </Grid>
                             <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                <a href="mailto:pablobeernardo@gmail.com " style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
-                                    <StyledButton>
+                                <StyledLink href="mailto:pablobeernardo@gmail.com ">
                                         <MailOutlineIcon />
                                         <Typography>
                                             Contato
                                         </Typography>
-                                    </StyledButton>
-                                </a>
+                                </StyledLink>
                             </Grid>
                         </Grid>
                         <SocialLink>

@@ -9,7 +9,7 @@ const projects = [
     date: '2024',
     description: 'Desenvolvimento de um site moderno e responsivo para o Salão Beatriz Studio, com foco na apresentação dos serviços e no direcionamento de agendamentos para o whatsapp. O projeto inclui uma galeria de trabalhos realizados, oferecendo uma experiência fluida para os clientes.',
     technologies: 'React, TypeScript, Styled Components',
-    imageUrl: 'https://i.ibb.co/v4QdMdv/projeto-bia.png',
+    imageUrl: 'https://i.ibb.co/6gLskFb/projeto-bia.png',
     linkproject: 'https://beatriz-studio.vercel.app/',
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     date: '2024',
     description: 'Criação de uma plataforma para a Igreja Projeto Vida, proporcionando uma interface intuitiva para a gestão de eventos e comunicação com a comunidade.',
     technologies: 'React, TypeScript, Styled Components',
-    imageUrl: 'https://i.ibb.co/cLjVrZm/projeto-igreja.png',
+    imageUrl: 'https://i.ibb.co/k0MsbzN/projeto-igreja.png',
     linkproject: 'https://projeto-vida-seven.vercel.app/',
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     date: '2024',
     description: ' Ele consiste em uma aplicação web para calcular a quantidade de galões necessários para armazenar um determinado volume de líquido, baseado nas informações fornecidas pelo usuário.',
     technologies: 'PHP, Laravel, MySQL, HTML, CSS',
-    imageUrl: 'https://i.ibb.co/rZQrjqq/projeto-galao.png',
+    imageUrl: 'https://i.ibb.co/sWJ9qbT/img.png',
     linkproject: 'https://github.com/pablobeernardo/galao_app',
   },
   {
