@@ -81,7 +81,7 @@ const About = () => {
                             Sou Pablo Bernardo, um desenvolvedor dedicado e apaixonado por tecnologia, 
                             atualmente em formação em Análise e Desenvolvimento de Sistemas pela Estácio. 
                             Apesar de estar no início da minha trajetória profissional, possuo conhecimentos em HTML, CSS, JavaScript e React, habilidades que venho aprimorando ao longo de minha carreira acadêmica e em projetos pessoais.
-                            Conhecimentos que obtive através de curos como Desenvolvedor FullStack pela DevMedia e como Desenvolvedor Front, Back e Mobile pelo SENAI em 2023.
+                            Conhecimentos que obtive através de cursos como Desenvolvedor FullStack pela DevMedia e como Desenvolvedor Front, Back e Mobile pelo SENAI em 2023.
                             Minhas competências incluem trabalho em equipe e resolução de problemas, sempre com o objetivo de desenvolver interfaces de usuário interativas e eficientes. Estou em constante busca por aprendizado e aprimoramento, pronto para contribuir em uma equipe dinâmica e crescer profissionalmente.
                         </Typography>
                         <hr />

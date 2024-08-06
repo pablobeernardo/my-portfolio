@@ -6,7 +6,7 @@ import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackgroud";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TextAnime from "../../../../components/TextAnime/TextAnime";
+import AnimatedText from "../../../../components/AnimatedText/AnimatedText";
 
 const SocialLink = styled("div")(({ theme }) => ({
     display: "flex",
@@ -56,8 +56,7 @@ const Hero = () => {
             width: "75%",
         }
     }));
-   
-
+    
     return (
         <StyledHero>
             <Container maxWidth="lg" id="home">
@@ -74,7 +73,7 @@ const Hero = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography color={"primary.contrastText"} variant="h1" textAlign={"center"} pb={2}>Pablo Bernardo</Typography>
-                        <TextAnime/>
+                        <AnimatedText />
                         <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
                                 <StyledButton>
