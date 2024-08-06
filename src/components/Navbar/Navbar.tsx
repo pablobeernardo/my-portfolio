@@ -1,4 +1,4 @@
-import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
+import { AppBar, Container, MenuItem, styled, Toolbar } from "@mui/material"
 import { Link as ScrollLink } from "react-scroll"
 
 const Navbar = () =>{
@@ -31,6 +31,7 @@ const Navbar = () =>{
 
     return (
       <>
+      <Container maxWidth="lg" id="home">
         <AppBar position="absolute">
             <StyledToolbar>
                 <ScrollLink to="home" smooth={true} duration={1000}>
@@ -44,6 +45,7 @@ const Navbar = () =>{
                 </ScrollLink>
             </StyledToolbar>
         </AppBar>        
+      </Container>
       </>
     )
   }

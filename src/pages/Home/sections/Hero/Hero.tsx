@@ -56,7 +56,7 @@ const Hero = () => {
             width: "75%",
         }
     }));
-    
+
     return (
         <StyledHero>
             <Container maxWidth="lg" id="home">
@@ -76,24 +76,25 @@ const Hero = () => {
                         <AnimatedText />
                         <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                <StyledButton>
-                                    <a href="src\assets\file\Dev_Pablo2024.pdf" download style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+                                <a href="src\assets\file\Dev_Pablo2024.pdf" download style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+                                    <StyledButton>
+
                                         <DownloadIcon />
                                         <Typography>
                                             Download CV
                                         </Typography>
-                                    </a>
-                                </StyledButton>
+                                    </StyledButton>
+                                </a>
                             </Grid>
                             <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-                                <StyledButton>
-                                    <a href="mailto:pablobeernardo@gmail.com " style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+                                <a href="mailto:pablobeernardo@gmail.com " style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+                                    <StyledButton>
                                         <MailOutlineIcon />
                                         <Typography>
                                             Contato
                                         </Typography>
-                                    </a>
-                                </StyledButton>
+                                    </StyledButton>
+                                </a>
                             </Grid>
                         </Grid>
                         <SocialLink>
