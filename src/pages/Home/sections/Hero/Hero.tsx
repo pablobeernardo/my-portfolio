@@ -32,6 +32,7 @@ const Hero = () => {
         alignItems: "center",
         [theme.breakpoints.up("xs")]: {
             paddingTop: "100px",
+            marginTop: "20px",
         },
         [theme.breakpoints.up("md")]: {
             paddingTop: "0",
