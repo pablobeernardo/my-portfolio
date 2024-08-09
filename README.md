@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Portfólio de Projetos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém uma coleção de projetos que desenvolvi recentemente. Cada projeto reflete minhas habilidades e experiências em desenvolvimento web, utilizando uma variedade de tecnologias modernas.
 
-Currently, two official plugins are available:
+## Sumário
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Visão Geral
 
-- Configure the top-level `parserOptions` property like this:
+Este projeto foi desenvolvido como um portfólio pessoal para exibir alguns dos trabalhos que realizei. Cada projeto listado inclui uma breve descrição, as tecnologias utilizadas e um link para visualização do projeto ao vivo.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Funcionalidades
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Exibição dos principais projetos em um layout responsivo e moderno.
+- Cada projeto possui uma imagem ilustrativa, descrição e link direto para visualização.
+- Animações e efeitos para melhorar a experiência do usuário.
+
+## Tecnologias Utilizadas
+
+- **React**
+- **TypeScript**
+- **Styled Components**
+- **Material UI**
+
+
