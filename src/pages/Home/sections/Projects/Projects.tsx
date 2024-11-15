@@ -39,6 +39,15 @@ const projects = [
     imageUrl: 'https://i.ibb.co/bzqzTDT/projeto-cep.png',
     linkproject: 'https://github.com/pablobeernardo/cep_api_teste',
   },
+  {
+    id: 5,
+    title: 'Organo',
+    date: '2024',
+    description: 'Este projeto foi um desafio de desenvolvimento que envolveu a criação de um sistema cadastro de colaboradores. A funcionalidade principal inclui um formulário para cadastro separando o colaborador por área de atuação.',
+    technologies: 'JavaScript, React, HTML, CSS',
+    imageUrl: 'https://i.ibb.co/stsp3F2/banner.png',
+    linkproject: 'https://organo-kappa-olive.vercel.app/',
+  },
 ];
 
 const aitf = keyframes`
